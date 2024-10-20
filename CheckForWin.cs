@@ -19,12 +19,6 @@
 
         public bool HasWinner(string[] buttonTexts)
         {
-            if (buttonTexts.Length != 9)
-            {
-                MessageBox.Show($"Invalid buttonTexts length: {buttonTexts.Length}");
-                return false;
-            }
-
             if (CheckVertical(buttonTexts[0], buttonTexts[3], buttonTexts[6]) ||
                 CheckVertical(buttonTexts[1], buttonTexts[4], buttonTexts[7]) ||
                 CheckVertical(buttonTexts[2], buttonTexts[5], buttonTexts[8]))
